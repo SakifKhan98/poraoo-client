@@ -4,11 +4,11 @@
   margin-left: 20px;
   margin-top: 15px;
 }
-.header_mid > input {
+.header_mid_search > input {
   flex: 1;
   border: none;
 }
-.header_mid > input:focus {
+.header_mid_search > input:focus {
   outline: none;
 }
 .header_inputbutton {

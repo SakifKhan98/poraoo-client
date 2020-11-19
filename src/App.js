@@ -9,7 +9,6 @@ import BidAssignment from "./components/Dashboard/TeacherDashboard/BidAssignment
 import BidDetails from "./components/Dashboard/TeacherDashboard/BidDetails/BidDetails";
 import CurrentBid from "./components/Dashboard/TeacherDashboard/CurrentBid/CurrentBid";
 import FindAssignmentTeacher from "./components/Dashboard/TeacherDashboard/FindAssignmentTeacher/FindAssignmentTeacher";
-import ReferenceModal from "./components/Dashboard/TeacherDashboard/Modal/ReferenceModal";
 import TeacherDashboard from "./components/Dashboard/TeacherDashboard/TeacherDashboard/TeacherDashboard";
 import Home from "./components/Home/Home/Home";
 import NotFound from "./components/NotFound/NotFound";
@@ -51,9 +50,6 @@ function App() {
         </Route>
         <Route path="/currentBid">
           <CurrentBid></CurrentBid>
-        </Route>
-        <Route path="/referenceModal">
-          <ReferenceModal></ReferenceModal>
         </Route>
         <Route exact path="/">
           <Home></Home>

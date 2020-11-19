@@ -1,25 +1,30 @@
 import React from 'react';
 import "./SearchAssignment.css";
 import SearchIcon from "@material-ui/icons/Search";
+import { Col, Container, Row } from 'react-bootstrap';
 
 const SearchAssignment = () => {
     return (
         <div className="search-assignment">
-            <div className="row">
-                <div className="col-md-12" style={{padding:"70px",textAlign:"center"}}>
-                   <h4 style={{color:"white"}}>Find 100+</h4>
-                   <h4 style={{color:"white"}}>Assignment From Here</h4>
-                   <p style={{color:"white", fontWeight:"400"}}>All Assignment are included in porao.com</p>
-                   <div className="header_mid-Search">   
-                    <input
-                        type="text"
-                        placeholder="Search Courses by Topic, Subject etc"
-                        className="search-input-assignment"
-                    />
-                    <SearchIcon className="header_inputbutton" />
-                    </div>
-                </div>
-            </div> 
+            <Container fluid="md">
+                <Row>
+                    <Col>
+                        <div style={{padding:"70px"}}>
+                            <h4 style={{color:"white"}}>Find 100+</h4>
+                            <h4 style={{color:"white"}}>Assignment From Here</h4>
+                            <p style={{color:"white", fontWeight:"400"}}>All Assignment are included in porao.com</p>
+                            <div>
+                                <input
+                                    type="text"
+                                    placeholder="Search Courses by Topic, Subject etc"
+                                    className="form-control"
+                                    style={{width:"60%",borderRadius:"20px"}}
+                                />  
+                            </div>
+                        </div>
+                    </Col>
+                </Row> 
+            </Container>
         </div>
     );
 };
